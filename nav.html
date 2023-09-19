@@ -1,0 +1,2779 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+        <button data-modal="connectWalletModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Connect Wallet
+        </button>
+        <button data-modal="connectWalletModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Connect Wallet 2
+        </button>
+        <button data-modal="walletModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Your Wallet
+        </button>
+        <button data-modal="walletModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Opening MetaMask...
+        </button>
+        <button data-modal="walletModal3" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Opening MetaMask... 2
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+
+        <a href="referal.html" style="display: block; margin-bottom: 20px;">
+            Referal Program
+        </a>
+        <a href="referal2.html" style="display: block; margin-bottom: 20px;">
+            Referal Program 2
+        </a>
+        <a href="referal3.html" style="display: block; margin-bottom: 20px;">
+            Referal Program 3
+        </a>
+
+        <button data-modal="withdrawModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Withdraw
+        </button>
+        <button data-modal="withdrawModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Withdrawal history
+        </button>
+        <button data-modal="welcomeModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Welcome to SolidFi
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="analytic.html" style="display: block; margin-bottom: 20px;">
+            Analytics Overview
+        </a>
+        <a href="analytic-tokens.html" style="display: block; margin-bottom: 20px;">
+            Analytics Tokens
+        </a>
+        <a href="analytic-pairs.html" style="display: block; margin-bottom: 20px;">
+            Analytics Pairs
+        </a>
+        <a href="analytic-tokens2.html" style="display: block; margin-bottom: 20px;">
+            Analytics Tokens Item
+        </a>
+        <a href="analytic-pairs2.html" style="display: block; margin-bottom: 20px;">
+            Analytics Pairs Item
+        </a>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="bribe.html" style="display: block; margin-bottom: 20px;">
+            Bribes
+        </a>
+
+        <button data-modal="addVoteModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Add Vote Bribe
+        </button>
+        <button data-modal="addVoteModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Add Vote Bribe (error)
+        </button>
+        <button data-modal="createBribeModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Create bribe on USDC/WETH
+        </button>
+        <button data-modal="createBribeModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Bribe Created
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="vote.html" style="display: block; margin-bottom: 20px;">
+            Vote
+        </a>
+        <a href="vote2.html" style="display: block; margin-bottom: 20px;">
+            Vote 2
+        </a>
+
+        <button data-modal="castVoteModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Cast vote using token #1162
+        </button>
+        <button data-modal="castVoteModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Votes Cast
+        </button>
+        <button data-modal="pokeVoteModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Poke Votes
+        </button>
+        <button data-modal="voteModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Voting Power Used
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="vest.html" style="display: block; margin-bottom: 20px;">
+            Vest
+        </a>
+        <a href="vest2.html" style="display: block; margin-bottom: 20px;">
+            Vest 2
+        </a>
+        <a href="vest3.html" style="display: block; margin-bottom: 20px;">
+            Vest 3
+        </a>
+
+        <button data-modal="manageLockModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Manage Lock
+        </button>
+        <button data-modal="createLockModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Create New Lock
+        </button>
+        <button data-modal="createLockModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Vest Created
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="rewards.html" style="display: block; margin-bottom: 20px;">
+            Rewards
+        </a>
+
+        <button data-modal="claimRewardsModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Claim rewards for ETH/WETH
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+        <a href="liquidity.html" style="display: block; margin-bottom: 20px;">
+            Liquidity
+        </a>
+
+        <button data-modal="manageLiquidityPairModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Manage Liquidity Pair
+        </button>
+        <button data-modal="manageLiquidityPairModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Manage Liquidity Pair 2
+        </button>
+        <button data-modal="unstakeLiquidityModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Unstake liquidity from gauge
+        </button>
+        <button data-modal="unstakeLiquidityModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Unstake liquidity from gauge 2
+        </button>
+        <button data-modal="addLiquidityModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Add liquidity to sAMM-USDC/USDT
+        </button>
+
+        <hr style="margin-bottom: 20px;">
+
+        <button data-modal="swapModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Swap
+        </button>
+        <button data-modal="swapModal2" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Swap2
+        </button>
+        <button data-modal="selectTokenModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Select token
+        </button>
+        <button data-modal="swapSuccessModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Swap Successfull
+        </button>
+        <button data-modal="swapErrorModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Swap Error
+        </button>
+        <button data-modal="swapUsdtModal" style="color: #fff; border: 2px solid #fff;margin-bottom: 20px;">
+            Swap USDT for SOLID
+        </button>
+    </div>
+
+    <div class="modal" id="withdrawModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Withdraw
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="withdraw-field">
+                <input type="text" placeholder="0.00">
+                <div class="withdraw-field__token">
+                    <img src="img/eth.svg" alt="">
+                    <span>SLD</span>
+                </div>
+                <div class="withdraw-field__buttons">
+                    <button class="withdraw-field__btn"><span>25%</span></button>
+                    <button class="withdraw-field__btn"><span>50%</span></button>
+                    <button class="withdraw-field__btn"><span>75%</span></button>
+                    <button class="withdraw-field__btn"><span>MAX</span></button>
+                </div>
+            </div>
+
+            <div class="withdraw-fee">
+                <div class="text16 gray-text medium-text">
+                    Withdrawal fee
+                </div>
+                <div class="m-price">
+                    <span class="text16">0,5</span>
+                    <span class="m-price__currency text16">SLD</span>
+                </div>
+            </div>
+
+            <div class="text12 red-text medium-text">
+                Invalid balance
+            </div>
+
+            <button disabled class="modal__btn m-btn m-btn-blue">
+                <span>Withdraw</span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="modal welcome-modal" id="welcomeModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Welcome to SolidFi
+                </div>
+            </div>
+
+            <div class="text16 gray-text3">
+                Hey! I’m Soli - devotes Solidfi assistant! Happy to see you in Biswap! Thanks for you choice! Hope you will enjoy our Low Fee Swaps and great earning opportunities.
+            </div>
+
+            <div class="text16 medium-text">
+                Join the friendly Solidfi family!
+            </div>
+
+            <div class="socials">
+                <a href="" class="socials__item m-btn m-btn-blue">
+                    <img src="img/twitter.svg" alt="">
+                </a>
+                <a href="" class="socials__item m-btn m-btn-blue">
+                    <img src="img/discord.svg" alt="">
+                </a>
+                <a href="" class="socials__item m-btn m-btn-blue">
+                    <img src="img/telegram.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="withdrawModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Withdrawal history
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="empty-data__inner">
+                <div class="text20 text20-mob">No Data</div>
+                <div class="text16 medium-text gray-text">There is no data for your request. Try again</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="addVoteModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Add Vote Bribe
+                </div>
+                <button class="modal__close _back _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3359 20.5L13.3359 16.5L17.3359 12.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="withdraw-field _type2">
+                <input type="text" placeholder="0.00">
+                <div class="withdraw-field__token">
+                    <img src="img/eth.svg" alt="">
+                    <span>ETH</span>
+                </div>
+                <div class="withdraw-field__hint">
+                    <div class="text12 gray-text3 medium-text">
+                        Balance: 0,00
+                    </div>
+                    <div class="text12 red-text medium-text">
+                        Invalid balance
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <button class="modal__btn m-btn m-btn-blue">
+                <span>Bribe</span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="modal" id="addVoteModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Add Vote Bribe
+                </div>
+                <button class="modal__close _back _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3359 20.5L13.3359 16.5L17.3359 12.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="withdraw-field _type2 _error">
+                <input type="text" placeholder="0.00">
+                <div class="withdraw-field__token">
+                    <img src="img/eth.svg" alt="">
+                    <span>ETH</span>
+                </div>
+                <div class="withdraw-field__hint">
+                    <div class="text12 gray-text3 medium-text">
+                        Balance: 0,00
+                    </div>
+                    <div class="text12 red-text medium-text">
+                        Invalid balance
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <button class="modal__btn m-btn m-btn-blue">
+                <span>Bribe</span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="modal bribe-modal" id="createBribeModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Create bribe on USDC/WETH
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Allow the contract to spend your USDC</span>
+                    <img src="img/time.svg" alt="">
+                </button>
+                <button class="bribe-modal__btn">
+                    <span>Create bribe</span>
+                    <img src="img/pause.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="createBribeModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/success-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Bribe Created
+            </div>
+            <div class="bribe-modal2__desc text16 text16-mob">
+                Transaction has been confirmed by the blockchain.
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Allow the contract to spend your USDC</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+                <button class="bribe-modal__btn">
+                    <span>Create bribe</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal" id="castVoteModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Cast vote using token #1162
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Cast Votes</span>
+                    <img src="img/pause.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="castVoteModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/success-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Votes Cast
+            </div>
+            <div class="bribe-modal2__desc text16 text16-mob">
+                Transaction has been confirmed by the blockchain.
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Cast Votes</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal" id="pokeVoteModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Poke Votes
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Poke Votes for veTHE #133289</span>
+                    <img src="img/pause.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal vote-modal" id="voteModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="vote-modal__item">
+                <div class="vote-hint__title">
+                    <div class="text16">Voting Power Used:</div>
+                    <div class="text20 vote-hint__change">100%</div>
+                </div>
+                <div class="vote-hint__nav">
+                    <button class="vote-hint__btn m-btn m-btn-blue">
+                        <span>Cast Votes</span>
+                    </button>
+                </div>
+            </div>
+            <div class="vote-modal__item">
+                <div class="vote-hint__title">
+                    <div class="text16">Voted:</div>
+                    <div class="text20 vote-hint__change">YES</div>
+                </div>
+                <div class="vote-hint__nav">
+                    <button class="vote-hint__btn m-btn m-btn-blue-outline">
+                        <span>Reset</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal lock-modal _tabs-parent" id="manageLockModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Manage Lock
+                </div>
+                <button class="modal__close _back _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3359 20.5L13.3359 16.5L17.3359 12.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab _tab _active" data-tab="_tab1">
+                    <span>Manage</span>
+                </div>
+                <div class="tab _tab" data-tab="_tab2">
+                    <span>Merge</span>
+                </div>
+                <div class="tab _tab" data-tab="_tab3">
+                    <span>Split</span>
+                </div>
+                <div class="tab _tab" data-tab="_tab4">
+                    <span>Transfer</span>
+                </div>
+            </div>
+
+            <div class="tab-content _active _tab1">
+                <div class="lock-modal__content">
+                    <div class="lock-stat">
+                        <div class="lock-stat__item">
+                            <div class="text12">
+                                Your Current position: <span class="gray-text">13 CHR</span>
+                            </div>
+                        </div>
+                        <div class="lock-stat__item">
+                            <div class="text12">
+                                Your Current voting power: 13 veCHR
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="withdraw-field _type2">
+                        <input type="text" placeholder="0.00">
+                        <div class="withdraw-field__token">
+                            <img src="img/frog.svg" alt="">
+                            <span>PEPE</span>
+                        </div>
+                        <div class="withdraw-field__hint">
+                            <div class="text12 gray-text3 medium-text">
+                                Balance: 0,00
+                            </div>
+                            <div class="text12 red-text medium-text">
+                                Invalid balance
+                            </div>
+                        </div>
+                    </div>
+
+                    <button disabled class="modal__btn m-btn m-btn-blue">
+                        <span>Increment position</span>
+                    </button>
+
+                    <div class="date-field m-field">
+                        <input type="text" class="date-input" placeholder="21/07/2023">
+                        <img class="m-field__icon" src="img/calendar.svg" alt="">
+                    </div>
+
+                    <div class="lock-expires">
+                        <div class="text16 medium-text gray-text">
+                            Expires:
+                        </div>
+                        <div class="lock-expires__grid">
+                            <div class="m-radio">
+                                <input checked type="radio" name="expires">
+                                <div class="m-radio__icon"></div>
+                                <div class="m-radio__text">
+                                    <span class="text12">2 week</span>
+                                </div>
+                            </div>
+                            <div class="m-radio">
+                                <input type="radio" name="expires">
+                                <div class="m-radio__icon"></div>
+                                <div class="m-radio__text">
+                                    <span class="text12">1 month</span>
+                                </div>
+                            </div>
+                            <div class="m-radio">
+                                <input type="radio" name="expires">
+                                <div class="m-radio__icon"></div>
+                                <div class="m-radio__text">
+                                    <span class="text12">6 month</span>
+                                </div>
+                            </div>
+                            <div class="m-radio">
+                                <input type="radio" name="expires">
+                                <div class="m-radio__icon"></div>
+                                <div class="m-radio__text">
+                                    <span class="text12">1 year</span>
+                                </div>
+                            </div>
+                            <div class="m-radio">
+                                <input type="radio" name="expires">
+                                <div class="m-radio__icon"></div>
+                                <div class="m-radio__text">
+                                    <span class="text12">2 year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="vechr">
+                        <div class="text16 medium-text gray-text">
+                            New veCHR
+                        </div>
+                        <div class="vechr__info">
+                            <div class="text16">
+                                -12.3535
+                            </div>
+                            <div class="text16 gray-text3">
+                                veCHR
+                            </div>
+                        </div>
+                    </div>
+
+                    <button disabled class="modal__btn m-btn m-btn-blue">
+                        <span>Extend duration</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content _tab2">
+                <div class="lock-modal__content">
+                    <div class="merge-fields">
+                        <div class="merge-field m-field">
+                            <input type="text" value="Lock #13847">
+                            <label>
+                                Merge from
+                            </label>
+                            <img class="m-field__icon" src="img/currency2.svg" alt="">
+                        </div>
+                        <div class="merge-field m-field _center">
+                            <input type="text" value="Lock #13847">
+                            <img class="m-field__icon" src="img/currency2.svg" alt="">
+                        </div>
+                        <div class="merge-fields__arrow">
+                            <img src="img/arrow-bottom.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="hint">
+                        <img src="img/hint-icon2.svg" alt="">
+                        <span class="text12">
+                        Merding/splitting will cause a loss of unclaimed and pending rewards,make sure to claim everything beforehand.
+                    </span>
+                    </div>
+
+                    <button disabled class="modal__btn m-btn m-btn-blue">
+                        <span>Merge</span>
+                    </button>
+
+                    <div class="text12 red-text medium-text text-center">
+                        Please, reset your votes before merging your veCHR
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content _tab3">
+                <div class="lock-modal__content">
+                    <div class="merge-fields">
+                        <div class="merge-field m-field">
+                            <input type="text" value="Lock #13847">
+                            <label>
+                                Split from
+                            </label>
+                            <img class="m-field__icon" src="img/currency2.svg" alt="">
+                        </div>
+                        <div class="min-max">
+                            <div class="text16">
+                                <span class="gray-text">MIN</span> / MAX
+                            </div>
+                            <div class="text16">6</div>
+                        </div>
+                        <div class="merge-fields__arrow">
+                            <img src="img/arrow-bottom.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="distribution">
+                        <div class="distribution__item">
+                            <div class="distribution__num text16">1</div>
+                            <div class="distribution__lps text16">-LPs</div>
+                            <div class="distribution__percent text16">50%</div>
+                        </div>
+                        <div class="distribution__item">
+                            <div class="distribution__num text16">2</div>
+                            <div class="distribution__lps text16">-LPs</div>
+                            <div class="distribution__percent text16">50%</div>
+                        </div>
+                        <div class="distribution__total">
+                            <div class="text12">Total distribution: 100%</div>
+                        </div>
+                    </div>
+
+                    <div class="hint">
+                        <img src="img/hint-icon2.svg" alt="">
+                        <span class="text12">
+                        Merding/splitting will cause a loss of unclaimed and pending rewards,make sure to claim everything beforehand.
+                    </span>
+                    </div>
+
+
+                    <button disabled class="modal__btn m-btn m-btn-blue">
+                        <span>Merge</span>
+                    </button>
+
+                    <div class="text12 red-text medium-text text-center">
+                        Please, reset your votes before merging your veCHR
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content _tab4">
+                <div class="lock-modal__content">
+                    <div class="merge-fields">
+                        <div class="merge-field m-field">
+                            <input type="text" value="Lock #13847">
+                            <label>
+                                Transfering
+                            </label>
+                            <img class="m-field__icon" src="img/currency2.svg" alt="">
+                        </div>
+                        <div class="merge-field m-field _small">
+                            <input type="text" value="0x00...">
+                            <label>
+                                Transfer to Address
+                            </label>
+                            <img class="m-field__icon" src="img/wallet2.svg" alt="">
+                        </div>
+                        <div class="merge-fields__arrow">
+                            <img src="img/arrow-bottom.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="hint">
+                        <img src="img/hint-icon2.svg" alt="">
+                        <span class="text12">
+                        Be aware of the address direction before you complete your transfer, it is not reversible.
+                    </span>
+                    </div>
+
+                    <button disabled class="modal__btn m-btn m-btn-blue">
+                        <span>Transfer</span>
+                    </button>
+
+                    <div class="text12 red-text medium-text text-center">
+                        Please, reset your votes before merging your veCHR
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal lock-modal" id="createLockModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Create New Lock
+                </div>
+                <button class="modal__close _back _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3359 20.5L13.3359 16.5L17.3359 12.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div class="merge-fields">
+                <div class="withdraw-field _type2">
+                    <input type="text" placeholder="0.00">
+                    <div class="withdraw-field__token">
+                        <img src="img/frog.svg" alt="">
+                        <span>PEPE</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text3 medium-text">
+                            Balance: 0,00
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                </div>
+                <div class="date-field m-field">
+                    <input type="text" class="date-input" placeholder="21/07/2023">
+                    <img class="m-field__icon" src="img/calendar.svg" alt="">
+                </div>
+                <div class="merge-fields__arrow">
+                    <img src="img/arrow-bottom.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="lock-expires">
+                <div class="text16 medium-text gray-text">
+                    Expires:
+                </div>
+                <div class="lock-expires__grid">
+                    <div class="m-radio">
+                        <input checked type="radio" name="expires">
+                        <div class="m-radio__icon"></div>
+                        <div class="m-radio__text">
+                            <span class="text12">2 week</span>
+                        </div>
+                    </div>
+                    <div class="m-radio">
+                        <input type="radio" name="expires">
+                        <div class="m-radio__icon"></div>
+                        <div class="m-radio__text">
+                            <span class="text12">1 month</span>
+                        </div>
+                    </div>
+                    <div class="m-radio">
+                        <input type="radio" name="expires">
+                        <div class="m-radio__icon"></div>
+                        <div class="m-radio__text">
+                            <span class="text12">6 month</span>
+                        </div>
+                    </div>
+                    <div class="m-radio">
+                        <input type="radio" name="expires">
+                        <div class="m-radio__icon"></div>
+                        <div class="m-radio__text">
+                            <span class="text12">1 year</span>
+                        </div>
+                    </div>
+                    <div class="m-radio">
+                        <input type="radio" name="expires">
+                        <div class="m-radio__icon"></div>
+                        <div class="m-radio__text">
+                            <span class="text12">2 year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="vote-power">
+                <div class="text16 medium-text gray-text">
+                    Your voting power will be:
+                </div>
+                <div class="vote-power__wrap">
+                    <div class="vote-power__info">
+                        <div class="text16">
+                            0.00
+                        </div>
+                        <div class="text16 gray-text3">
+                            PEPE
+                        </div>
+                    </div>
+                    <div class="vote-power__info2 gray-text3">
+                        <div class="text12">0,00 PEPE locked expires in 6 days</div>
+                        <div class="text12">Locked until 2023 / 06 / 28</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="reward">
+                <div class="text16 medium-text gray-text">
+                    Reward
+                </div>
+                <div class="reward__items">
+                    <div class="reward__item">
+                        <span>1 PEPE</span> locked for <span>4 years</span> = <span>1.00</span> veSOLID
+                    </div>
+                    <div class="reward__item">
+                        <span>1 PEPE</span> locked for <span>3 years</span> = <span>0.75</span> veSOLID
+                    </div>
+                    <div class="reward__item">
+                        <span>1 PEPE</span> locked for <span>2 years</span> = <span>0.50</span> veSOLID
+                    </div>
+                    <div class="reward__item">
+                        <span>1 PEPE</span> locked for <span>1 years</span> = <span>0.25</span> veSOLID
+                    </div>
+                </div>
+            </div>
+
+            <button disabled class="modal__btn m-btn m-btn-blue">
+                <span>Lock</span>
+            </button>
+
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="createLockModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/success-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Vest Created
+            </div>
+            <div class="bribe-modal2__desc text16 text16-mob">
+                Transaction has been confirmed by the blockchain.
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Allow the vesting contract to use your PEPE</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+                <button class="bribe-modal__btn">
+                    <span>Vesting your tokens</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal" id="claimRewardsModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Claim rewards for ETH/WETH
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Claiming your rewards</span>
+                    <img src="img/time.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal lock-modal _tabs-parent" id="manageLiquidityPairModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Manage Liquidity Pair
+                </div>
+                <button class="modal__close _back _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3359 20.5L13.3359 16.5L17.3359 12.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab _tab _active" data-tab="_tab1">
+                    <span>Deposit</span>
+                </div>
+                <div class="tab _tab" data-tab="_tab2">
+                    <span>Withdraw</span>
+                </div>
+                <div class="tab _tab" data-tab="_tab3">
+                    <span>Staking</span>
+                </div>
+                <div class="tab _tab" data-tab="_tab4">
+                    <span>Positions</span>
+                </div>
+            </div>
+
+            <div class="tab-content _active _tab1 _tabs-parent2">
+                <div class="lock-modal__content">
+
+                    <div class="merge-fields">
+                        <div class="withdraw-field">
+                            <input type="text" placeholder="32.2">
+                            <div class="withdraw-field__token">
+                                <img src="img/eth.svg" alt="">
+                                <span>ETH</span>
+                            </div>
+                            <div class="withdraw-field__hint">
+                                <div class="text12 gray-text3 medium-text">
+                                    Balance: 0,00
+                                </div>
+                                <div class="text12 red-text medium-text">
+                                    Invalid balance
+                                </div>
+                            </div>
+                            <div class="withdraw-field__buttons">
+                                <button class="withdraw-field__btn"><span>25%</span></button>
+                                <button class="withdraw-field__btn"><span>50%</span></button>
+                                <button class="withdraw-field__btn"><span>75%</span></button>
+                                <button class="withdraw-field__btn _active"><span>MAX</span></button>
+                            </div>
+                        </div>
+                        <div class="withdraw-field _type2">
+                            <input type="text" placeholder="0.00">
+                            <div class="withdraw-field__token">
+                                <img src="img/frog.svg" alt="">
+                                <span>PEPE</span>
+                            </div>
+                            <div class="withdraw-field__hint">
+                                <div class="text12 gray-text3 medium-text">
+                                    Balance: 0,00
+                                </div>
+                                <div class="text12 red-text medium-text">
+                                    Invalid balance
+                                </div>
+                            </div>
+                        </div>
+                        <div class="merge-fields__arrow">
+                            <img src="img/arrow-bottom.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="tabs">
+                        <div class="tab _sub-tab _active" data-tab="_sub-tab1">
+                            <span>Stable</span>
+                        </div>
+                        <div class="tab _sub-tab" data-tab="_sub-tab2">
+                            <span>Volatile</span>
+                        </div>
+                    </div>
+
+                    <div class="reserve-info">
+                        <div class="text16 medium-text gray-text">
+                            Reserve info
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1 662, 85
+                                </div>
+                                <div class="text16 gray-text3">
+                                    USDC
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1,03
+                                </div>
+                                <div class="text16 gray-text3">
+                                    WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="balance-info">
+                        <div class="text16 medium-text gray-text">
+                            Your Balances
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Pooled vAMM-USDC/WETH
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Staked vAMM-USDC/WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-content2 _sub-tab1 _active">
+                        <button class="modal__btn m-btn m-btn-blue">
+                            <span>Deposit</span>
+                        </button>
+                    </div>
+                    <div class="tab-content2 _sub-tab2">
+                        <div class="modal__buttons">
+                            <button class="modal__btn m-btn m-btn-blue">
+                                <span>Deposite & Stake</span>
+                            </button>
+                            <button class="modal__btn m-btn m-btn-blue-outline">
+                                <span>Deposit</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-content _tab2">
+                <div class="lock-modal__content">
+                    <div class="merge-fields">
+                        <div class="withdraw-field _type2 _pl160">
+                            <input type="text" value="43.290">
+                            <div class="withdraw-field__token">
+                                <img src="img/eth.svg" alt="">
+                                <span>vAMM...</span>
+                            </div>
+                            <div class="withdraw-field__hint">
+                                <div class="text12 gray-text3 medium-text">
+                                    Balance: 0,00
+                                </div>
+                                <div class="text12 red-text medium-text">
+                                    Invalid balance
+                                </div>
+                            </div>
+                        </div>
+                        <div class="withdraw-field__items">
+                            <div class="merge-field m-field _small _reverse">
+                                <input type="text" value="0.00">
+                                <label>
+                                    USDC
+                                </label>
+                                <img class="m-field__icon" src="img/eth.svg" alt="">
+                            </div>
+                            <div class="merge-field m-field _small _reverse">
+                                <input type="text" value="0.00">
+                                <label>
+                                    WETH
+                                </label>
+                                <img class="m-field__icon" src="img/eth.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="merge-fields__arrow">
+                            <img src="img/arrow-bottom.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="reserve-info">
+                        <div class="text16 medium-text gray-text">
+                            Reserve info
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1 662, 85
+                                </div>
+                                <div class="text16 gray-text3">
+                                    USDC
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1,03
+                                </div>
+                                <div class="text16 gray-text3">
+                                    WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="balance-info">
+                        <div class="text16 medium-text gray-text">
+                            Your Balances
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Pooled vAMM-USDC/WETH
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Staked vAMM-USDC/WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal__buttons">
+                        <button class="modal__btn m-btn m-btn-blue">
+                            <span>Unstake And Withdraw</span>
+                        </button>
+                        <button class="modal__btn m-btn m-btn-blue-outline">
+                            <span>Unstake LP</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab-content _tab3">
+                <div class="lock-modal__content">
+                    <div class="merge-fields">
+                        <div class="withdraw-field">
+                            <input type="text" placeholder="0.00">
+                            <div class="withdraw-field__token">
+                                <div class="withdraw-field__token-images">
+                                    <img src="img/tether.svg" alt="">
+                                    <img src="img/dai.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="withdraw-field__hint">
+                                <div class="text12 gray-text3 medium-text">
+                                    Balance: 0,00
+                                </div>
+                                <div class="text12 red-text medium-text">
+                                    Invalid balance
+                                </div>
+                            </div>
+                            <div class="withdraw-field__buttons">
+                                <button class="withdraw-field__btn"><span>sAAM-USD+/DAI+</span></button>
+                                <button class="withdraw-field__btn"><span>MAX</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="modal__btn m-btn m-btn-blue">
+                        <span>Stake</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="tab-content _tab4 _tabs-parent2">
+                <div class="lock-modal__content">
+                    <div class="merge-fields">
+                        <div class="m-select manft-select">
+                            <div class="m-select__field merge-field m-field _center">
+                                <input type="text" placeholder="Select your maNFT">
+                                <img class="m-field__icon" src="img/currency2.svg" alt="">
+                            </div>
+                            <div class="select-dropdown">
+                                <div class="m-table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><span>ID:</span></th>
+                                                <th><span>USDT</span></th>
+                                                <th><span>USDС</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="m-select__option">
+                                                <td>
+                                                    <input type="radio" name="manftType" value="#6329">
+                                                    <div class="text16">
+                                                        #6329
+                                                    </div>
+                                                    <div class="text16 gray-text">
+                                                        ~$21.32
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        55.43
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        55.43
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="m-select__option">
+                                                <td>
+                                                    <input type="radio" name="manftType" value="#3214">
+                                                    <div class="text16">
+                                                        #3214
+                                                    </div>
+                                                    <div class="text16 gray-text">
+                                                        ~$32.9
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        123.43
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        123.43
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="m-select__option">
+                                                <td>
+                                                    <input type="radio" name="manftType" value="#1893">
+                                                    <div class="text16">
+                                                        #1893
+                                                    </div>
+                                                    <div class="text16 gray-text">
+                                                        ~$18,2
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        83.2
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        83.2
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="m-select__option">
+                                                <td>
+                                                    <input type="radio" name="manftType" value="#5522">
+                                                    <div class="text16">
+                                                        #5522
+                                                    </div>
+                                                    <div class="text16 gray-text">
+                                                        ~$9.83
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        92.8
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="text16">
+                                                        92.8
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tabs">
+                        <div class="tab _sub-tab _active" data-tab="_sub-tab1">
+                            <span>Unstake</span>
+                        </div>
+                        <div class="tab _sub-tab" data-tab="_sub-tab2">
+                            <span>Merge</span>
+                        </div>
+                        <div class="tab _sub-tab" data-tab="_sub-tab3">
+                            <span>Split</span>
+                        </div>
+                        <div class="tab _sub-tab" data-tab="_sub-tab4">
+                            <span>Transfer</span>
+                        </div>
+                    </div>
+
+                    <div class="tab-content2 _sub-tab1 _active">
+                        <button class="modal__btn m-btn m-btn-blue">
+                            <span>Merge</span>
+                        </button>
+                    </div>
+
+                    <div class="tab-content2 _sub-tab2">
+                        <div class="lock-modal__content">
+                            <div class="merge-fields">
+                                <div class="m-select manft-select">
+                                    <div class="m-select__field merge-field m-field _center">
+                                        <input type="text" placeholder="Merge with maNFT ">
+                                        <img class="m-field__icon" src="img/currency2.svg" alt="">
+                                    </div>
+                                    <div class="select-dropdown">
+                                        <div class="m-table">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th><span>ID:</span></th>
+                                                        <th><span>USDT</span></th>
+                                                        <th><span>USDС</span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="m-select__option">
+                                                        <td>
+                                                            <input type="radio" name="manftType" value="#6329">
+                                                            <div class="text16">
+                                                                #6329
+                                                            </div>
+                                                            <div class="text16 gray-text">
+                                                                ~$21.32
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                55.43
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                55.43
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="m-select__option">
+                                                        <td>
+                                                            <input type="radio" name="manftType" value="#3214">
+                                                            <div class="text16">
+                                                                #3214
+                                                            </div>
+                                                            <div class="text16 gray-text">
+                                                                ~$32.9
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                123.43
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                123.43
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="m-select__option">
+                                                        <td>
+                                                            <input type="radio" name="manftType" value="#1893">
+                                                            <div class="text16">
+                                                                #1893
+                                                            </div>
+                                                            <div class="text16 gray-text">
+                                                                ~$18,2
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                83.2
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                83.2
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr class="m-select__option">
+                                                        <td>
+                                                            <input type="radio" name="manftType" value="#5522">
+                                                            <div class="text16">
+                                                                #5522
+                                                            </div>
+                                                            <div class="text16 gray-text">
+                                                                ~$9.83
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                92.8
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="text16">
+                                                                92.8
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal__buttons">
+                                <button class="modal__btn m-btn m-btn-blue">
+                                    <span>Merge</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content2 _sub-tab3">
+                        <div class="lock-modal__content">
+                            <div class="distribution">
+                                <div class="distribution__item">
+                                    <div class="distribution__num text16">1</div>
+                                    <div class="distribution__lps text16">-LPs</div>
+                                    <div class="distribution__percent text16">50%</div>
+                                </div>
+                                <div class="distribution__item">
+                                    <div class="distribution__num text16">2</div>
+                                    <div class="distribution__lps text16">-LPs</div>
+                                    <div class="distribution__percent text16">50%</div>
+                                </div>
+                                <div class="distribution__total">
+                                    <div class="text12">Total distribution: 100%</div>
+                                </div>
+                            </div>
+
+                            <div class="hint">
+                                <img src="img/hint-icon2.svg" alt="">
+                                <span class="text12">
+                        Merding/splitting will cause a loss of unclaimed and pending rewards,make sure to claim everything beforehand.
+                    </span>
+                            </div>
+
+                            <div class="modal__buttons">
+                                <button class="modal__btn m-btn m-btn-blue">
+                                    <span>Split token</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content2 _sub-tab4">
+                        <div class="lock-modal__content">
+                            <div class="merge-fields">
+                                <div class="merge-field m-field _small">
+                                    <input type="text" value="0x00...">
+                                    <label>
+                                        Transfer to Address
+                                    </label>
+                                    <img class="m-field__icon" src="img/wallet2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="hint">
+                                <img src="img/hint-icon2.svg" alt="">
+                                <span class="text12">
+                            Be aware of the address direction before you complete your transfer, it is not reversible.
+                        </span>
+                            </div>
+                            <div class="modal__buttons">
+                                <button class="modal__btn m-btn m-btn-blue">
+                                    <span>Transfer</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal lock-modal _tabs-parent" id="manageLiquidityPairModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Manage Liquidity Pair
+                </div>
+                <button class="modal__close _back _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.3359 20.5L13.3359 16.5L17.3359 12.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="tabs">
+                <div class="tab _tab _active" data-tab="_tab1">
+                    <span>Deposit</span>
+                </div>
+                <div class="tab _tab" data-tab="_tab2">
+                    <span>Withdraw</span>
+                </div>
+            </div>
+
+            <div class="tab-content _active _tab1 _tabs-parent2">
+                <div class="lock-modal__content">
+
+                    <div class="merge-fields">
+                        <div class="withdraw-field">
+                            <input type="text" placeholder="32.2">
+                            <div class="withdraw-field__token">
+                                <img src="img/eth.svg" alt="">
+                                <span>ETH</span>
+                            </div>
+                            <div class="withdraw-field__hint">
+                                <div class="text12 gray-text3 medium-text">
+                                    Balance: 0,00
+                                </div>
+                                <div class="text12 red-text medium-text">
+                                    Invalid balance
+                                </div>
+                            </div>
+                            <div class="withdraw-field__buttons">
+                                <button class="withdraw-field__btn"><span>25%</span></button>
+                                <button class="withdraw-field__btn"><span>50%</span></button>
+                                <button class="withdraw-field__btn"><span>75%</span></button>
+                                <button class="withdraw-field__btn _active"><span>MAX</span></button>
+                            </div>
+                        </div>
+                        <div class="withdraw-field _type2">
+                            <input type="text" placeholder="0.00">
+                            <div class="withdraw-field__token">
+                                <img src="img/frog.svg" alt="">
+                                <span>PEPE</span>
+                            </div>
+                            <div class="withdraw-field__hint">
+                                <div class="text12 gray-text3 medium-text">
+                                    Balance: 0,00
+                                </div>
+                                <div class="text12 red-text medium-text">
+                                    Invalid balance
+                                </div>
+                            </div>
+                        </div>
+                        <div class="merge-fields__arrow">
+                            <img src="img/arrow-bottom.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="tabs">
+                        <div class="tab _sub-tab _active" data-tab="_sub-tab1">
+                            <span>Stable</span>
+                        </div>
+                        <div class="tab _sub-tab" data-tab="_sub-tab2">
+                            <span>Volatile</span>
+                        </div>
+                    </div>
+
+                    <div class="reserve-info">
+                        <div class="text16 medium-text gray-text">
+                            Reserve info
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1 662, 85
+                                </div>
+                                <div class="text16 gray-text3">
+                                    USDC
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1,03
+                                </div>
+                                <div class="text16 gray-text3">
+                                    WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="balance-info">
+                        <div class="text16 medium-text gray-text">
+                            Your Balances
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Pooled vAMM-USDC/WETH
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Staked vAMM-USDC/WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-content2 _sub-tab1 _active">
+                        <button class="modal__btn m-btn m-btn-blue">
+                            <span>Deposit</span>
+                        </button>
+                    </div>
+                    <div class="tab-content2 _sub-tab2">
+                        <div class="modal__buttons">
+                            <button class="modal__btn m-btn m-btn-blue">
+                                <span>Deposite & Stake</span>
+                            </button>
+                            <button class="modal__btn m-btn m-btn-blue-outline">
+                                <span>Deposit</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-content _tab2">
+                <div class="lock-modal__content">
+                    <div class="merge-fields">
+                        <div class="withdraw-field _type2 _pl160">
+                            <input type="text" value="43.290">
+                            <div class="withdraw-field__token">
+                                <img src="img/eth.svg" alt="">
+                                <span>vAMM...</span>
+                            </div>
+                            <div class="withdraw-field__hint">
+                                <div class="text12 gray-text3 medium-text">
+                                    Balance: 0,00
+                                </div>
+                                <div class="text12 red-text medium-text">
+                                    Invalid balance
+                                </div>
+                            </div>
+                        </div>
+                        <div class="withdraw-field__items">
+                            <div class="merge-field m-field _small _reverse">
+                                <input type="text" value="0.00">
+                                <label>
+                                    USDC
+                                </label>
+                                <img class="m-field__icon" src="img/eth.svg" alt="">
+                            </div>
+                            <div class="merge-field m-field _small _reverse">
+                                <input type="text" value="0.00">
+                                <label>
+                                    WETH
+                                </label>
+                                <img class="m-field__icon" src="img/eth.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="merge-fields__arrow">
+                            <img src="img/arrow-bottom.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="reserve-info">
+                        <div class="text16 medium-text gray-text">
+                            Reserve info
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1 662, 85
+                                </div>
+                                <div class="text16 gray-text3">
+                                    USDC
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    1,03
+                                </div>
+                                <div class="text16 gray-text3">
+                                    WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="balance-info">
+                        <div class="text16 medium-text gray-text">
+                            Your Balances
+                        </div>
+                        <div class="reserve-info__items">
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Pooled vAMM-USDC/WETH
+                                </div>
+                            </div>
+                            <div class="vechr__info">
+                                <div class="text16">
+                                    0,00
+                                </div>
+                                <div class="text16 gray-text3">
+                                    Staked vAMM-USDC/WETH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal__buttons">
+                        <button class="modal__btn m-btn m-btn-blue">
+                            <span>Unstake And Withdraw</span>
+                        </button>
+                        <button class="modal__btn m-btn m-btn-blue-outline">
+                            <span>Unstake LP</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal bribe-modal bribe-modal2" id="liquidityUnstakedModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <div class="bribe-modal2__icon">
+                <img src="img/success-icon.svg" alt="">
+            </div>
+            <div class="bribe-modal2__title text20 text20-mob medium-text">
+                Liquidity Unstaked
+            </div>
+            <div class="bribe-modal2__desc text16 text16-mob">
+                Transaction has been confirmed by the blockchain.
+            </div>
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Unstake LP tokens from the gauge</span>
+                    <img src="img/share2.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal bribe-modal" id="unstakeLiquidityModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Unstake liquidity from gauge
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Unstake LP tokens from the gauge</span>
+                    <img src="img/time.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal bribe-modal" id="unstakeLiquidityModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Unstake liquidity from gauge
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Unstake LP tokens from the gauge</span>
+                    <img src="img/hint-icon3.svg" alt="">
+                </button>
+            </div>
+
+            <div class="error-message">
+                <div class="error-message__top">
+                    <img src="img/hint-icon2.svg" alt="">
+                    <span class="text16 medium-text">Error</span>
+                </div>
+                <div class="text12">
+                    execution reverted { “originalError”: {“code”: 3, “data”: “0xdjireoerijrfnjekddmjdekjnfjk “message”: execution reverted” }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal bribe-modal" id="addLiquidityModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Add liquidity to sAMM-USDC/USDT
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="bribe-modal__buttons">
+                <button class="bribe-modal__btn">
+                    <span>Allow the router to spend your USDC</span>
+                    <img src="img/time.svg" alt="">
+                </button>
+                <button class="bribe-modal__btn">
+                    <span>Allow the router to spend your USDT</span>
+                    <img src="img/time.svg" alt="">
+                </button>
+                <button class="bribe-modal__btn">
+                    <span>Allow the router to spend your <br> aAMM-USDC/USDT</span>
+                    <img src="img/time.svg" alt="">
+                </button>
+                <button class="bribe-modal__btn">
+                    <span>Deposit tokens in the pool</span>
+                    <img src="img/pause.svg" alt="">
+                </button>
+                <button class="bribe-modal__btn">
+                    <span>Stake LP tokens in the gauge</span>
+                    <img src="img/check.svg" alt="">
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal lock-modal _tabs-parent" id="swapModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 text20-mob medium-text">
+                    Swap
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="merge-fields">
+                <div class="withdraw-field">
+                    <input type="text" placeholder="0.00">
+                    <div class="withdraw-field__token">
+                        <img src="img/eth.svg" alt="">
+                        <span>ETH</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text3 medium-text">
+                            Balance: 0,00
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                    <div class="withdraw-field__buttons">
+                        <button class="withdraw-field__btn"><span>25%</span></button>
+                        <button class="withdraw-field__btn"><span>50%</span></button>
+                        <button class="withdraw-field__btn"><span>75%</span></button>
+                        <button class="withdraw-field__btn"><span>MAX</span></button>
+                    </div>
+                </div>
+                <div class="withdraw-field _type2">
+                    <input type="text" placeholder="0.00">
+                    <div class="withdraw-field__token">
+                        <img src="img/frog.svg" alt="">
+                        <span>PEPE</span>
+                    </div>
+                    <div class="withdraw-field__hint">
+                        <div class="text12 gray-text3 medium-text">
+                            Balance: 0,00
+                        </div>
+                        <div class="text12 red-text medium-text">
+                            Invalid balance
+                        </div>
+                    </div>
+                </div>
+                <div class="merge-fields__arrow">
+                    <img src="img/arrow-bottom.svg" alt="">
+                </div>
+            </div>
+
+            <div class="reserve-info price-info">
+                <div class="text16 medium-text gray-text">
+                    Price info
+                </div>
+                <div class="reserve-info__items">
+                    <div class="vechr__info">
+                        <div class="text16">
+                            <0.1 </div>
+                                <div class="text16 gray-text3">
+                                    ETH per PEPE
+                                </div>
+                        </div>
+                        <div class="vechr__info">
+                            <div class="text16">
+                                3,278.2
+                            </div>
+                            <div class="text16 gray-text3">
+                                PEPE per ETH
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reserve-info">
+                    <div class="text16 medium-text gray-text">
+                        Slippage Tolerance
+                    </div>
+                    <div class="slippage">
+                        <div class="slippage__item">
+                            <input type="radio" name="slippage">
+                            <label>0.1%</label>
+                        </div>
+                        <div class="slippage__item">
+                            <input type="radio" name="slippage">
+                            <label>0.25%</label>
+                        </div>
+                        <div class="slippage__item">
+                            <input type="radio" name="slippage">
+                            <label>0.5%</label>
+                        </div>
+                        <div class="slippage__item">
+                            <input type="radio" name="slippage">
+                            <label>1%</label>
+                        </div>
+                        <div class="slippage-input">
+                            <input type="number" value="1">
+                            <label>%</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reserve-info">
+                    <div class="text16 medium-text gray-text">
+                        Slippage Tolerance
+                    </div>
+                    <div class="route">
+                        <div class="route__item">
+                            <img src="img/eth.svg" alt="">
+                        </div>
+                        <div class="route__item">
+                            <img src="img/frog.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-impact">
+                    <div class="text12">Price impact -1,11%</div>
+                </div>
+
+                <div class="exchange-rate">
+                    <div class="exchange-rate__text text12">
+                        1 ETH <span>=</span> 1 PEPE <span>(~$1 723.9)</span>
+                    </div>
+                    <div class="exchange-rate__sale">
+                        <img src="img/gas.svg" alt="">
+                        <span class="text12 gray-text">~$0.9</span>
+                    </div>
+                </div>
+
+                <button class="modal__btn m-btn m-btn-blue">
+                    <span>Swap</span>
+                </button>
+
+
+            </div>
+        </div>
+
+        <div class="modal lock-modal _tabs-parent" id="swapModal2">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text">
+                        Swap
+                    </div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="merge-fields">
+                    <div class="withdraw-field">
+                        <input type="text" placeholder="0.00">
+                        <div class="withdraw-field__token">
+                            <img src="img/eth.svg" alt="">
+                            <span>ETH</span>
+                        </div>
+                        <div class="withdraw-field__hint">
+                            <div class="text12 gray-text3 medium-text">
+                                Balance: 0,00
+                            </div>
+                            <div class="text12 red-text medium-text">
+                                Invalid balance
+                            </div>
+                        </div>
+                        <div class="withdraw-field__buttons">
+                            <button class="withdraw-field__btn"><span>25%</span></button>
+                            <button class="withdraw-field__btn"><span>50%</span></button>
+                            <button class="withdraw-field__btn"><span>75%</span></button>
+                            <button class="withdraw-field__btn"><span>MAX</span></button>
+                        </div>
+                    </div>
+                    <div class="withdraw-field _type2">
+                        <input disabled type="text">
+                        <div class="withdraw-field__hint">
+                            <div class="text12 gray-text3 medium-text">
+                                Balance: 0,00
+                            </div>
+                        </div>
+                        <button data-modal="swapModal" class="withdraw-field__select m-btn m-btn-blue">
+                            <span>Select Token</span>
+                        </button>
+                    </div>
+                    <div class="merge-fields__arrow">
+                        <img src="img/arrow-bottom.svg" alt="">
+                    </div>
+                </div>
+
+                <button class="modal__btn m-btn m-btn-blue">
+                    <img src="img/wallet.svg" alt="">
+                    <span>Connect Wallet</span>
+                </button>
+
+
+            </div>
+        </div>
+
+        <div class="modal token-modal _tabs-parent" id="selectTokenModal">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text">
+                        Select token
+                    </div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="search-field">
+                    <input type="text" placeholder="Select your maNFT">
+                    <svg class="search-field__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 11.6667C3.5 12.7391 3.71124 13.8011 4.12165 14.7919C4.53206 15.7827 5.13362 16.683 5.89196 17.4414C6.65031 18.1997 7.55059 18.8013 8.54142 19.2117C9.53224 19.6221 10.5942 19.8333 11.6667 19.8333C12.7391 19.8333 13.8011 19.6221 14.7919 19.2117C15.7827 18.8013 16.683 18.1997 17.4414 17.4414C18.1997 16.683 18.8013 15.7827 19.2117 14.7919C19.6221 13.8011 19.8333 12.7391 19.8333 11.6667C19.8333 10.5942 19.6221 9.53224 19.2117 8.54142C18.8013 7.55059 18.1997 6.65031 17.4414 5.89196C16.683 5.13362 15.7827 4.53206 14.7919 4.12165C13.8011 3.71124 12.7391 3.5 11.6667 3.5C10.5942 3.5 9.53224 3.71124 8.54142 4.12165C7.55059 4.53206 6.65031 5.13362 5.89196 5.89196C5.13362 6.65031 4.53206 7.55059 4.12165 8.54142C3.71124 9.53224 3.5 10.5942 3.5 11.6667Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M24.5 24.5L17.5 17.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+
+                <div class="tokens">
+                    <div class="token-item">
+                        <input checked type="radio" name="token">
+                        <div class="token-item__inner">
+                            <img src="img/eth.svg" alt="">
+                            <span>
+                        ETH
+                    </span>
+                        </div>
+                    </div>
+                    <div class="token-item">
+                        <input type="radio" name="token">
+                        <div class="token-item__inner">
+                            <img src="img/usdc.svg" alt="">
+                            <span>
+                        USDC
+                    </span>
+                        </div>
+                    </div>
+                    <div class="token-item">
+                        <input type="radio" name="token">
+                        <div class="token-item__inner">
+                            <img src="img/dai.svg" alt="">
+                            <span>
+                        DAI
+                    </span>
+                        </div>
+                    </div>
+                    <div class="token-item">
+                        <input type="radio" name="token">
+                        <div class="token-item__inner">
+                            <img src="img/tether.svg" alt="">
+                            <span>
+                        USDT
+                    </span>
+                        </div>
+                    </div>
+                    <div class="token-item">
+                        <input type="radio" name="token">
+                        <div class="token-item__inner">
+                            <img src="img/matic.svg" alt="">
+                            <span>
+                        MATIC
+                    </span>
+                        </div>
+                    </div>
+                    <div class="token-item">
+                        <input type="radio" name="token">
+                        <div class="token-item__inner">
+                            <img src="img/uni.svg" alt="">
+                            <span>
+                        UNI
+                    </span>
+                        </div>
+                    </div>
+                    <div class="token-item">
+                        <input type="radio" name="token">
+                        <div class="token-item__inner">
+                            <img src="img/sushi.svg" alt="">
+                            <span>
+                        SUSHI
+                    </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tokens2">
+                    <div class="token-item2">
+                        <input checked type="radio" name="token2">
+                        <div class="token-item2__inner">
+                            <div class="pair">
+                                <div class="pair__wrap">
+                                    <div class="pair__img">
+                                        <img src="img/1INCH.svg" alt="">
+                                    </div>
+                                    <div class="pair__content">
+                                        <div class="text16">1INCH</div>
+                                        <div class="text16 gray-text3">
+                                            1INCH Token
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="token-item2__nums">
+                                <div class="text16">
+                                    0.0424
+                                </div>
+                                <div class="text16">
+                                    <span class="gray-text3">$ </span>
+                                    12
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="token-item2">
+                        <input type="radio" name="token2">
+                        <div class="token-item2__inner">
+                            <div class="pair">
+                                <div class="pair__wrap">
+                                    <div class="pair__img">
+                                        <img src="img/BNB.svg" alt="">
+                                    </div>
+                                    <div class="pair__content">
+                                        <div class="text16">BNB</div>
+                                        <div class="text16 gray-text3">
+                                            Binance Coin
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="token-item2__nums">
+                                <div class="text16">
+                                    0.1821
+                                </div>
+                                <div class="text16">
+                                    <span class="gray-text3">$ </span>
+                                    7.32
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="token-item2">
+                        <input type="radio" name="token2">
+                        <div class="token-item2__inner">
+                            <div class="pair">
+                                <div class="pair__wrap">
+                                    <div class="pair__img">
+                                        <img src="img/ADA.svg" alt="">
+                                    </div>
+                                    <div class="pair__content">
+                                        <div class="text16">ADA</div>
+                                        <div class="text16 gray-text3">
+                                            Cardano Token
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="token-item2__nums">
+                                <div class="text16">
+                                    3.7329
+                                </div>
+                                <div class="text16">
+                                    <span class="gray-text3">$ </span>
+                                    82.8
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="token-item2">
+                        <input type="radio" name="token2">
+                        <div class="token-item2__inner">
+                            <div class="pair">
+                                <div class="pair__wrap">
+                                    <div class="pair__img">
+                                        <img src="img/ALPACA.svg" alt="">
+                                    </div>
+                                    <div class="pair__content">
+                                        <div class="text16">ALPACA</div>
+                                        <div class="text16 gray-text3">
+                                            Alpaca Token
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="token-item2__nums">
+                                <div class="text16">
+                                    0.0424
+                                </div>
+                                <div class="text16">
+                                    <span class="gray-text3">$ </span>
+                                    12
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="token-item2">
+                        <input type="radio" name="token2">
+                        <div class="token-item2__inner">
+                            <div class="pair">
+                                <div class="pair__wrap">
+                                    <div class="pair__img">
+                                        <img src="img/agEUR.svg" alt="">
+                                    </div>
+                                    <div class="pair__content">
+                                        <div class="text16">agEUR</div>
+                                        <div class="text16 gray-text3">
+                                            agEUR
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="token-item2__nums">
+                                <div class="text16">
+                                    1.6823
+                                </div>
+                                <div class="text16">
+                                    <span class="gray-text3">$ </span>
+                                    443
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal bribe-modal bribe-modal2" id="swapSuccessModal">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="bribe-modal2__icon">
+                    <img src="img/success-icon.svg" alt="">
+                </div>
+                <div class="bribe-modal2__title text20 text20-mob medium-text">
+                    Swap Successfull
+                </div>
+                <div class="bribe-modal2__desc text16 text16-mob">
+                    Transaction has been confirmed by the blockchain.
+                </div>
+                <div class="bribe-modal__buttons">
+                    <button class="bribe-modal__btn">
+                        <span>Swap 33.00 USDT for SOLID</span>
+                        <img src="img/share2.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal bribe-modal" id="swapUsdtModal">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text">
+                        Swap USDT for SOLID
+                    </div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="bribe-modal__buttons">
+                    <button class="bribe-modal__btn">
+                        <span>Allowance on USDT sufficent</span>
+                        <img src="img/check.svg" alt="">
+                    </button>
+                    <button class="bribe-modal__btn">
+                        <span>Swap 33.00 USDT for SOLID</span>
+                        <img src="img/pause.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal bribe-modal _error bribe-modal2" id="swapErrorModal">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="bribe-modal2__icon">
+                    <img src="img/success-icon.svg" alt="">
+                </div>
+                <div class="bribe-modal2__title text20 text20-mob medium-text">
+                    Swap Error
+                </div>
+                <div class="bribe-modal2__desc text16 text16-mob">
+                    Transaction failed, please try again
+                </div>
+                <div class="bribe-modal__buttons">
+                    <button class="bribe-modal__btn">
+                        <span>Cause of error</span>
+                        <img src="img/share2.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal wallet-modal" id="connectWalletModal">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text">
+                        Connect Wallet
+                    </div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="wallets">
+                    <div class="wallet-item">
+                        <img src="img/wallet-icon.svg" alt="">
+                        <span>Metamask</span>
+                    </div>
+                    <div class="wallet-item">
+                        <img src="img/wallet-icon2.svg" alt="">
+                        <span>Rainbow</span>
+                    </div>
+                    <div class="wallet-item">
+                        <img src="img/wallet-icon3.svg" alt="">
+                        <span>Trust</span>
+                    </div>
+                    <div class="wallet-item">
+                        <img src="img/wallet-icon4.svg" alt="">
+                        <span>Coinbase</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="modal wallet-modal" id="connectWalletModal2">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text">
+                        Connect Wallet
+                    </div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="wallets2">
+                    <div class="search-field">
+                        <input type="text" placeholder="Select your maNFT">
+                        <svg class="search-field__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 11.6667C3.5 12.7391 3.71124 13.8011 4.12165 14.7919C4.53206 15.7827 5.13362 16.683 5.89196 17.4414C6.65031 18.1997 7.55059 18.8013 8.54142 19.2117C9.53224 19.6221 10.5942 19.8333 11.6667 19.8333C12.7391 19.8333 13.8011 19.6221 14.7919 19.2117C15.7827 18.8013 16.683 18.1997 17.4414 17.4414C18.1997 16.683 18.8013 15.7827 19.2117 14.7919C19.6221 13.8011 19.8333 12.7391 19.8333 11.6667C19.8333 10.5942 19.6221 9.53224 19.2117 8.54142C18.8013 7.55059 18.1997 6.65031 17.4414 5.89196C16.683 5.13362 15.7827 4.53206 14.7919 4.12165C13.8011 3.71124 12.7391 3.5 11.6667 3.5C10.5942 3.5 9.53224 3.71124 8.54142 4.12165C7.55059 4.53206 6.65031 5.13362 5.89196 5.89196C5.13362 6.65031 4.53206 7.55059 4.12165 8.54142C3.71124 9.53224 3.5 10.5942 3.5 11.6667Z" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M24.5 24.5L17.5 17.5" stroke="#98A1C0" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                    <div class="wallet-item2">
+                        <img src="img/tether.svg" alt="">
+                        <span>Metamask</span>
+                    </div>
+                    <div class="wallet-item2">
+                        <img src="img/busd.svg" alt="">
+                        <span>TrastWallet</span>
+                    </div>
+                    <div class="wallet-item2">
+                        <img src="img/usdc.svg" alt="">
+                        <span>Coinbase Wallet</span>
+                    </div>
+                    <div class="wallet-item2">
+                        <img src="img/MATIC.svg" alt="">
+                        <span>Rainbow</span>
+                    </div>
+                    <div class="wallet-item2">
+                        <img src="img/weth.svg" alt="">
+                        <span>Bitkeep</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="modal wallet-modal2" id="walletModal">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text">
+                        Your Wallet
+                    </div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="wallet-modal__top">
+                    <div class="wallet">
+                        <div class="wallet__content">
+                            <img src="img/wallet2.svg" alt="">
+                            <div class="wallet__info">
+                                <div class="text16 gray-text">Your Address</div>
+                                <div class="text16">0x2daedsmjn3489osmls</div>
+                            </div>
+                        </div>
+                        <button data-text="0x2daedsmjn3489osmls" class="_copy-clipboard wallet__copy">
+                            <img src="img/copy2.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="wallet-type">
+                        <div class="wallet-type__content">
+                            <img src="img/wallet-icon.svg" alt="">
+                            <span class="text16">Metamask</span>
+                        </div>
+                        <button class="wallet-type__btn m-btn m-btn-blue">
+                            <span>Change</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="empty-data__inner">
+                    <div class="text20 text20-mob">Recent transactions</div>
+                    <div class="text16 medium-text gray-text">No recent transactions</div>
+                </div>
+
+                <button class="modal__btn m-btn m-btn-blue-outline">
+                    <span>Disconnect</span>
+                </button>
+
+                <div class="bribe-modal__buttons">
+                    <button class="bribe-modal__btn">
+                        <span>Watch on BscScan</span>
+                        <img src="img/share3.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal wallet-modal3" id="walletModal2">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text"></div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="opening-wallet">
+                    <img class="opening-wallet__img" src="img/wallet-icon.svg" alt="">
+                    <div class="opening-wallet__text">
+                        <div class="text20 medium-text">
+                            Opening MetaMask...
+                        </div>
+                        <div class="text16 gray-text">
+                            Confirm connection in the extension...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loader">
+                    <svg class="circle-chart" viewBox="0 0 35 35" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="rgba(170, 192, 249, 0.2)" opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="5,5" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                        <circle class="circle-chart__fill" stroke="#fff" stroke-width="3" stroke-dasharray="55,100" stroke-dashoffset="0" stroke-linecap="round" fill="none" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                    </svg>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="modal wallet-modal3" id="walletModal3">
+            <div class="modal__bg _close-modal"></div>
+            <div class="modal__dialog">
+                <div class="modal__top">
+                    <div class="text20 text20-mob medium-text"></div>
+                    <button class="modal__close _close-modal">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#98A1C0" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="opening-wallet">
+                    <img class="opening-wallet__img" src="img/wallet-icon.svg" alt="">
+                    <div class="opening-wallet__text">
+                        <div class="text20 medium-text">
+                            Opening MetaMask...
+                        </div>
+                        <div class="text16 gray-text">
+                            Confirm connection in the extension...
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loader">
+                    <svg class="circle-chart" viewBox="0 0 35 35" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                        <circle stroke="rgba(170, 192, 249, 0.2)" opacity="0.3" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="5,5" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                        <circle class="circle-chart__fill" stroke="#fff" stroke-width="3" stroke-dasharray="55,100" stroke-dashoffset="0" stroke-linecap="round" fill="none" cx="17.5" cy="17.5" r="15.91549431"></circle>
+                    </svg>
+                </div>
+
+
+            </div>
+
+            <div class="alert">
+                <button class="alert__close">
+                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3359 13.8335L18.6693 19.1668M18.6693 13.8335L13.3359 19.1668" stroke="#fff" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 4.5C25.6 4.5 28 6.9 28 16.5C28 26.1 25.6 28.5 16 28.5C6.4 28.5 4 26.1 4 16.5C4 6.9 6.4 4.5 16 4.5Z" stroke="#fff" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <div class="alert__inner">
+                    <img src="img/error.svg" alt="" class="alert__img">
+                    <div class="alert__text">
+                        <div class="text16">Error</div>
+                        <div class="text12">Error:invalid address [argumenet=”address”, value=undefined, code=INVALID_ ARGUMENT,version=address/3,45.]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  -->
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
